@@ -16,18 +16,21 @@ void Main()
 		var l = n[0];
 		var r = n[1];
 		
-		var ans = (
-			from a in Enumerable.Range(l, r-l+ 1)
-			from b in Enumerable.Range(l, r-l+ 1)
-			select a + b
-		)
-		.Distinct()
-		//.ToArray()
-		//.Dump()
-		.Count()
-		;
+		//var ans = (
+		//	from a in Enumerable.Range(l, r-l+ 1)
+		//	from b in Enumerable.Range(l, r-l+ 1)
+		//	select a + b
+		//)
+		//.Distinct()
+		////.ToArray()
+		////.Dump()
+		//.Count()
+		//;
+		//
+		//Console.WriteLine(ans);	
 		
-		Console.WriteLine(ans);	
+		//numbers in  2*l ~ 2*R, so count them! 
+		Console.WriteLine(2*r -2*l + 1);
 		
 	}
 	

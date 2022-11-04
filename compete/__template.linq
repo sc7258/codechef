@@ -12,6 +12,7 @@ D
 	var t = int.Parse(Console.ReadLine());
 	for( int i = 0; i < t; i++ ){
 		var n = Console.ReadLine().Split(' ').Select(c => int.Parse(c)).ToArray();
+		//var n = int.Parse(Console.ReadLine());
 	}	
 }
 
